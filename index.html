@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страхования туристов</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="air-datepicker.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+   
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg mb-lg-0 mb-4   ">
+            <div class="container-fluid d-flex justify-content-lg-around justify-content-between align-items-center text-center">
+                    <a class=" text-center  col-md-4 col-7 col-lg-3 " href="#"><img src="/img/logo.jpg" alt="" class=" col-lg-12 col-12"></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  text-center justify-content-center " id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 align-items-center ">
+                            <li class="nav-item me-xxl-5 me-2 mb-lg-0 mb-4 mt-lg-0 mt-4">
+                                <a class="nav-link active  mb-lg-0" aria-current="page" href="#">
+                                    <p class="nav__link-number">Правила страхования лиц, выезжающих за рубеж</p>
+                                </a>
+                            </li>
+                            <li class="nav-item me-xxl-5 me-3 mb-lg-0 mb-4 ">
+                                <a class="nav-link " href="#">
+                                    <p class="nav__phone-number ">+7 727 3200 200</p>
+                                    <hr class="nav-hr">
+                                    <p class="nav__phone-text">CONTACT CENTER</p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown me-xxl-5 me-3 mb-lg-0 mb-4">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/img/ru.png" alt="" class="me-2">
+                                    <p class="nav__dropdown-text me-2 notranslate">Русский</p>
+
+                                </a>
+                                <ul class="dropdown-menu p-3">
+                                    <li class=" mb-1 d-flex align-items-center dropdown-link " data-google-lang="ru" id="ru"  onclick="coook('ru')" ><img src="/img/ru.png" alt="" class="dropdown-flag"><p class="dropdown-item notranslate"  href="#">Русский</p></a></li>
+                                    <li class=" mb-1 d-flex align-items-center dropdown-link " data-google-lang="kk" id="kz" onclick="coook('kz')"><img src="/img/kz.png" alt="" class="dropdown-flag-kz"><p class="dropdown-item notranslate" href="#">Қазақша</p></a></li>
+                                    <li class=" mb-1 d-flex align-items-center dropdown-link " data-google-lang="la" id="lat" onclick="coook('lat')"><img src="/img/kz.png" alt="" class="dropdown-flag-kz"><p class="dropdown-item notranslate" href="#">Qazaqsha</p></a></li>
+                                    <li class=" mb-1 d-flex align-items-center dropdown-link " data-google-lang="en" id="en"  onclick="coook('en')" ><img src="/img/en.png" alt="" class="dropdown-flag notranslate"><p class="dropdown-item" href="#">English</p></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login.html">
+                                    <div class="nav__button d-flex justify-content-center align-items-center">
+                                        <img src="/img/button-nav.svg" alt="" class="nav__button-img me-xl-3 me-lg-1 me-3">
+
+                                        <p class="nav__button-text notranslate locale-nav-cabinet ">Личный кабинет</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            
+                <section class="title">
+                <div class="row">
+                    <div class="title__block justify-content-around align-items-center mt-lg-5">
+                        <div class="title__text d-flex flex-column justify-content-center  ">
+                            <h2 class="title__text-title mb-lg-3 mb-2 ">Медицинское страхование туристов</h2>
+                            <p class="title__text-text mb-lg-4 mb-2">Подумайте сейчас о безопасности вашей поездке </p>
+                            <a href="#insurance" class="title__button d-flex justify-content-center align-items-center mt-lg-0 mt-2">
+                                <p class="title__text-button-text me-lg-3 me-3">Оформить страховку</p>
+                                <img src="/img/arrow.png" alt="" class="title__text-button-img">
+                                
+                            </a>
+                        </div>
+                        <div class="title__img "><img src="/img/title-img.png " alt="" class="w-100"></div>
+                    </div>
+                </div>
+                </section>
+                <section class="polic mt-lg-5">
+                <div class="row">
+                <h1 class="polic-title text-center mb-lg-5  mb-5">В страховой полис входит:</h1>
+                <div class="polic__block d-flex justify-content-lg-between justify-content-center align-items-center">
+                    <div class="polic__cards d-flex ">
+                        <div class="polic__card d-flex justify-content-center align-items-center flex-column text-center col me-lg-5 me-md-4  mb-md-0 mb-5">
+                            <img src="/img/card__img-1.png" class="polic__card-img mb-lg-3 mb-3">
+                            <h3 class="polic__card-title">Амбулаторное и стационарное лечение</h3>
+                            <p class="polic__card-text">Поправляйте свое здоровье,  компания INTERTEACH позаботится обо всем остальном</p>
+                        </div>
+                        <div class="polic__card d-flex justify-content-center align-items-center flex-column text-center col me-lg-5 me-md-4 mb-md-0 mb-5">
+                            <img src="/img/card__img-2.png" class="polic__card-img mb-lg-3  mb-3">
+                            <h3 class="polic__card-title">Диагностика</h3>
+                            <p class="polic__card-text">Наша страховка покроет обследование по экстренным показаниям</p>
+                        </div>
+                        <div class="polic__card d-flex justify-content-center align-items-center flex-column text-center col ">
+                            <img src="/img/card__img-3.png" class="polic__card-img mb-lg-3  mb-3" >
+                            <h3 class="polic__card-title">Медицинские транспортные расходы</h3>
+                            <p class="polic__card-text">Мы оплатим транспортные расходы до медицинского учреждения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </section>
+                <section class="discount">
+                <div class="row">
+                    <div class="discount__block d-flex justify-content-xxl-center justify-content-md-between">
+                        <div class="discount__title me-lg-2 me-2">
+                            <h1 class="discount__title-text"><span class="discount-blue">Только для вас,<br></span> Скидка при оформлении <span class="discount-red"> сегодня <br></span>
+                                <span class="discount-red">Успейте купить!</span> </h1>
+                            <a href="#insurance" class="discount__button d-flex justify-content-center align-items-center mt-lg-4">
+                                <p class="discount__button-text me-lg-3 notranslate locale-discount-button">Застроховаться</p>
+                                <img src="/img/arrow.png" alt="" class="discount__button-img">
+                            </a>
+                        </div>
+                        <div class="discount__img">
+                            <img src="/img/discount.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section class="insurance " style="position: relative;" id="insurance">
+                    <div class="insurance__block ">
+                    <div class="insurance__info ">
+                            <div class="insurance__forms ">
+                                <form action="" class=" block__insurance-form1" id="section1">
+                                    <h1 class="insurance__info-title text-center mb-lg-5 mb-4 mt-3">Страхования туристов и выезжающих за рубеж</h1>
+            
+                                    <div class=" insurance__mains">
+                                    <div class="col-md-8 col-12  justify-content-center d-flex  me-0 insurance__flexdirection">
+                                        <div class="row col-sm-6  me-lg-2 me-md-3 me-0">
+                                            <div class="insurance__left  ">
+                                        <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                            <label for="" class="insurance__program-label mb-lg-1 mb-1">Выберите программу поездки</label>
+                                            <select class="insurance__program-aria select"  id="program"  >
+                                                <option value="">Выберите программу поездки</option>
+                                                <option value="1">Однократная(только одна страна)</option>
+                                                <option value="2">Многократная(несколько стран)</option>
+                                              </select>
+                                       </div>
+                                        <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                            <label for="" class="insurance__program-label mb-lg-1 mb-1">Укажите страну</label>
+                                            
+                                            <select class=" select"  id="country"  multiple   >
+                                                <option value="Hong Kong,222" data-currency="2" data-zone="3" data-name-lat="Hong Kong" data-id="222">Hong Kong</option><option value="Australia,17" data-currency="2" data-zone="3" data-name-lat="Australia" data-id="17">Австралия</option><option value="Austria,18" data-currency="3" data-zone="2" data-name-lat="Austria" data-id="18">Австрия</option><option value="Azerbaijan,19" data-currency="3" data-zone="2" data-name-lat="Azerbaijan" data-id="19">Азербайджан</option><option value="Albania,20" data-currency="3" data-zone="2" data-name-lat="Albania" data-id="20">Албания</option><option value="Algeria,21" data-currency="2" data-zone="1" data-name-lat="Algeria" data-id="21">Алжир</option><option value="Angola,23" data-currency="2" data-zone="1" data-name-lat="Angola" data-id="23">Ангола</option><option value="Andorra,24" data-currency="3" data-zone="2" data-name-lat="Andorra" data-id="24">Андорра</option><option value="Antigua and Barbuda,25" data-currency="2" data-zone="1" data-name-lat="Antigua and Barbuda" data-id="25">Антигуа и Барбуда</option><option value="Argentina,27" data-currency="2" data-zone="3" data-name-lat="Argentina" data-id="27">Аргентина</option><option value="Armenia,28" data-currency="3" data-zone="2" data-name-lat="Armenia" data-id="28">Армения</option><option value="Afghanistan,30" data-currency="2" data-zone="1" data-name-lat="Afghanistan" data-id="30">Афганистан</option><option value="Bahamas,31" data-currency="2" data-zone="1" data-name-lat="Bahamas" data-id="31">Багамские острова</option><option value="Bangladesh,32" data-currency="2" data-zone="1" data-name-lat="Bangladesh" data-id="32">Бангладеш</option><option value="Barbados,33" data-currency="2" data-zone="1" data-name-lat="Barbados" data-id="33">Барбадос</option><option value="Bahrain,34" data-currency="2" data-zone="1" data-name-lat="Bahrain" data-id="34">Бахрейн</option><option value="Belarus,35" data-currency="3" data-zone="2" data-name-lat="Belarus" data-id="35">Беларусь</option><option value="Belize,36" data-currency="2" data-zone="1" data-name-lat="Belize" data-id="36">Белиз</option><option value="Belgium,13" data-currency="3" data-zone="2" data-name-lat="Belgium" data-id="13">Бельгия</option><option value="Benin,37" data-currency="2" data-zone="1" data-name-lat="Benin" data-id="37">Бенин</option><option value="Bulgaria,42" data-currency="3" data-zone="2" data-name-lat="Bulgaria" data-id="42">Болгария</option><option value="Bolivia,43" data-currency="2" data-zone="3" data-name-lat="Bolivia" data-id="43">Боливия</option><option value="Bosnia and Herzegovina,40" data-currency="3" data-zone="2" data-name-lat="Bosnia and Herzegovina" data-id="40">Босния и Герцеговина</option><option value="Botswana,41" data-currency="2" data-zone="1" data-name-lat="Botswana" data-id="41">Ботсвана</option><option value="Brazil,44" data-currency="2" data-zone="3" data-name-lat="Brazil" data-id="44">Бразилия</option><option value="Burkina Faso,45" data-currency="2" data-zone="1" data-name-lat="Burkina Faso" data-id="45">Буркина-Фасо</option><option value="Burundi,46" data-currency="2" data-zone="1" data-name-lat="Burundi" data-id="46">Бурунди</option><option value="Bhutan,47" data-currency="2" data-zone="1" data-name-lat="Bhutan" data-id="47">Бутан</option><option value="Vanuatu,216" data-currency="2" data-zone="1" data-name-lat="Vanuatu" data-id="216">Вануату</option><option value="Vatican,48" data-currency="3" data-zone="2" data-name-lat="Vatican" data-id="48">Ватикан, Holy See</option><option value="Hungary,49" data-currency="3" data-zone="2" data-name-lat="Hungary" data-id="49">Венгрия</option><option value="Venezuela,50" data-currency="2" data-zone="3" data-name-lat="Venezuela" data-id="50">Венесуэла</option><option value="Worldwide,223" data-currency="3" data-zone="2" data-name-lat="Worldwide" data-id="223">Весь мир</option><option value="Vietnam,54" data-currency="2" data-zone="1" data-name-lat="Vietnam" data-id="54">Вьетнам</option><option value="Gabon,55" data-currency="2" data-zone="1" data-name-lat="Gabon" data-id="55">Габон</option><option value="Haiti,56" data-currency="2" data-zone="3" data-name-lat="Haiti" data-id="56">Гаити</option><option value="Guyana,57" data-currency="2" data-zone="1" data-name-lat="Guyana" data-id="57">Гайана</option><option value="Gambia,58" data-currency="2" data-zone="1" data-name-lat="Gambia" data-id="58">Гамбия</option><option value="Ghana,59" data-currency="2" data-zone="1" data-name-lat="Ghana" data-id="59">Гана</option><option value="Guatemala,60" data-currency="2" data-zone="3" data-name-lat="Guatemala" data-id="60">Гватемала</option><option value="Guinea,61" data-currency="2" data-zone="1" data-name-lat="Guinea" data-id="61">Гвинея</option><option value="Guinea bissau,62" data-currency="2" data-zone="1" data-name-lat="Guinea bissau" data-id="62">Гвинея-Бисау</option><option value="Germany,5" data-currency="3" data-zone="2" data-name-lat="Germany" data-id="5">Германия</option><option value="Honduras,64" data-currency="2" data-zone="3" data-name-lat="Honduras" data-id="64">Гондурас</option><option value="Grenada,65" data-currency="2" data-zone="1" data-name-lat="Grenada" data-id="65">Гренада</option><option value="Greece,67" data-currency="3" data-zone="2" data-name-lat="Greece" data-id="67">Греция</option><option value="Georgia,68" data-currency="3" data-zone="2" data-name-lat="Georgia" data-id="68">Грузия</option><option value="Denmark,70" data-currency="3" data-zone="2" data-name-lat="Denmark" data-id="70">Дания</option><option value="Djibouti,71" data-currency="2" data-zone="1" data-name-lat="Djibouti" data-id="71">Джибути</option><option value="Dominica,72" data-currency="2" data-zone="1" data-name-lat="Dominica" data-id="72">Доминика</option><option value="Dominican Republic,73" data-currency="2" data-zone="3" data-name-lat="Dominican Republic" data-id="73">Доминиканская республика</option><option value="Egypt,10" data-currency="2" data-zone="1" data-name-lat="Egypt" data-id="10">Египет</option><option value="Zambia,74" data-currency="2" data-zone="1" data-name-lat="Zambia" data-id="74">Замбия</option><option value="Zimbabwe,76" data-currency="2" data-zone="1" data-name-lat="Zimbabwe" data-id="76">Зимбабве</option><option value="Israel,77" data-currency="2" data-zone="1" data-name-lat="Israel" data-id="77">Израиль</option><option value="India,78" data-currency="2" data-zone="1" data-name-lat="India" data-id="78">Индия</option><option value="Indonesia,79" data-currency="2" data-zone="1" data-name-lat="Indonesia" data-id="79">Индонезия</option><option value="Jordan,80" data-currency="2" data-zone="1" data-name-lat="Jordan" data-id="80">Иордания</option><option value="Iraq,81" data-currency="2" data-zone="1" data-name-lat="Iraq" data-id="81">Ирак</option><option value="Iran,82" data-currency="2" data-zone="1" data-name-lat="Iran" data-id="82">Иран, исламская республика</option><option value="Ireland,11" data-currency="3" data-zone="2" data-name-lat="Ireland" data-id="11">Ирландия</option><option value="Iceland,83" data-currency="3" data-zone="2" data-name-lat="Iceland" data-id="83">Исландия</option><option value="Spain,84" data-currency="3" data-zone="2" data-name-lat="Spain" data-id="84">Испания</option><option value="Italy,14" data-currency="3" data-zone="2" data-name-lat="Italy" data-id="14">Италия</option><option value="Yemen,85" data-currency="2" data-zone="1" data-name-lat="Yemen" data-id="85">Йемен</option><option value="Cape Verde,86" data-currency="2" data-zone="1" data-name-lat="Cape Verde" data-id="86">Кабо-Верде</option><option value="Cambodia,88" data-currency="2" data-zone="1" data-name-lat="Cambodia" data-id="88">Камбоджа</option><option value="Cameroon,89" data-currency="2" data-zone="1" data-name-lat="Cameroon" data-id="89">Камерун</option><option value="Canada,90" data-currency="2" data-zone="3" data-name-lat="Canada" data-id="90">Канада</option><option value="Qatar,91" data-currency="2" data-zone="1" data-name-lat="Qatar" data-id="91">Катар</option><option value="Kenya,92" data-currency="2" data-zone="1" data-name-lat="Kenya" data-id="92">Кения</option><option value="Cyprus,93" data-currency="3" data-zone="2" data-name-lat="Cyprus" data-id="93">Кипр</option><option value="Kiribati,94" data-currency="2" data-zone="1" data-name-lat="Kiribati" data-id="94">Кирибати</option><option value="China,95" data-currency="2" data-zone="3" data-name-lat="China" data-id="95">Китай</option><option value="Colombia,97" data-currency="2" data-zone="3" data-name-lat="Colombia" data-id="97">Колумбия</option><option value="Comoros,98" data-currency="2" data-zone="1" data-name-lat="Comoros" data-id="98">Коморские острова</option><option value="Congo,99" data-currency="2" data-zone="1" data-name-lat="Congo" data-id="99">Конго</option><option value="Korea,96" data-currency="2" data-zone="1" data-name-lat="Korea" data-id="96">Корея</option><option value="Korea, Democratic People&#39;s Republic,100" data-currency="2" data-zone="1" data-name-lat="Korea, Democratic People&#39;s Republic" data-id="100">Корея, Демократическая народная республика</option><option value="Costa Rica,101" data-currency="2" data-zone="3" data-name-lat="Costa Rica" data-id="101">Коста-Рика</option><option value="Cote D&#39;Ivoire,102" data-currency="2" data-zone="1" data-name-lat="Cote D&#39;Ivoire" data-id="102">Кот-Д`ивуар</option><option value="Cuba,103" data-currency="2" data-zone="3" data-name-lat="Cuba" data-id="103">Куба</option><option value="Kuwait,104" data-currency="2" data-zone="1" data-name-lat="Kuwait" data-id="104">Кувейт</option><option value="Kyrgyzstan,9" data-currency="2" data-zone="1" data-name-lat="Kyrgyzstan" data-id="9">Кыргызстан</option><option value="Lao Democratic People&#39;s Republic,106" data-currency="2" data-zone="1" data-name-lat="Lao Democratic People&#39;s Republic" data-id="106">Лаосская демократическая народная республика</option><option value="Latvia,107" data-currency="3" data-zone="2" data-name-lat="Latvia" data-id="107">Латвия</option><option value="Lesotho,108" data-currency="2" data-zone="1" data-name-lat="Lesotho" data-id="108">Лесото</option><option value="Liberia,111" data-currency="2" data-zone="1" data-name-lat="Liberia" data-id="111">Либерия</option><option value="Lebanon,110" data-currency="3" data-zone="2" data-name-lat="Lebanon" data-id="110">Ливан</option><option value="Lithuania,112" data-currency="3" data-zone="2" data-name-lat="Lithuania" data-id="112">Литва</option><option value="Liechtenstein,113" data-currency="3" data-zone="2" data-name-lat="Liechtenstein" data-id="113">Лихтенштейн</option><option value="Luxembourg,213" data-currency="3" data-zone="2" data-name-lat="Luxembourg" data-id="213">Люксембург</option><option value="Mauritius,114" data-currency="2" data-zone="1" data-name-lat="Mauritius" data-id="114">Маврикий</option><option value="Mauritania,220" data-currency="2" data-zone="1" data-name-lat="Mauritania" data-id="220">Мавритания</option><option value="Madagascar,115" data-currency="2" data-zone="1" data-name-lat="Madagascar" data-id="115">Мадагаскар</option><option value="Macedonia,116" data-currency="3" data-zone="2" data-name-lat="Macedonia" data-id="116">Македония, бывшая Югославская республика</option><option value="Malawi,117" data-currency="2" data-zone="1" data-name-lat="Malawi" data-id="117">Малави</option><option value="Malaysia,118" data-currency="2" data-zone="1" data-name-lat="Malaysia" data-id="118">Малайзия</option><option value="Mali,120" data-currency="2" data-zone="1" data-name-lat="Mali" data-id="120">Мали</option><option value="Maldives,215" data-currency="2" data-zone="1" data-name-lat="Maldives" data-id="215">Мальдивы</option><option value="Malta,119" data-currency="3" data-zone="2" data-name-lat="Malta" data-id="119">Мальта</option><option value="Morocco,130" data-currency="2" data-zone="1" data-name-lat="Morocco" data-id="130">Марокко</option><option value="Marshall Islands,122" data-currency="2" data-zone="1" data-name-lat="Marshall Islands" data-id="122">Маршалловы острова</option><option value="Mexico,123" data-currency="2" data-zone="3" data-name-lat="Mexico" data-id="123">Мексика</option><option value="Micronesia,124" data-currency="2" data-zone="1" data-name-lat="Micronesia" data-id="124">Микронезия, Федеративные штаты</option><option value="Mozambique,125" data-currency="2" data-zone="1" data-name-lat="Mozambique" data-id="125">Мозамбик</option><option value="Moldova,126" data-currency="3" data-zone="2" data-name-lat="Moldova" data-id="126">Молдова республика</option><option value="Monaco,127" data-currency="3" data-zone="2" data-name-lat="Monaco" data-id="127">Монако</option><option value="Mongolia,128" data-currency="2" data-zone="1" data-name-lat="Mongolia" data-id="128">Монголия</option><option value="Myanmar,131" data-currency="2" data-zone="1" data-name-lat="Myanmar" data-id="131">Мьянма</option><option value="Namibia,132" data-currency="2" data-zone="1" data-name-lat="Namibia" data-id="132">Намибия</option><option value="Nauru,133" data-currency="2" data-zone="1" data-name-lat="Nauru" data-id="133">Науру</option><option value="Nepal,134" data-currency="2" data-zone="1" data-name-lat="Nepal" data-id="134">Непал</option><option value="Niger,135" data-currency="2" data-zone="1" data-name-lat="Niger" data-id="135">Нигер</option><option value="Nigeria,136" data-currency="2" data-zone="1" data-name-lat="Nigeria" data-id="136">Нигерия</option><option value="Netherlands,139" data-currency="3" data-zone="2" data-name-lat="Netherlands" data-id="139">Нидерланды</option><option value="Nicaragua,140" data-currency="2" data-zone="1" data-name-lat="Nicaragua" data-id="140">Никарагуа</option><option value="New Zealand,137" data-currency="2" data-zone="1" data-name-lat="New Zealand" data-id="137">Новая Зеландия</option><option value="New Guinea,148" data-currency="2" data-zone="1" data-name-lat="New Guinea" data-id="148">Новая_Гвинея</option><option value="Norway,138" data-currency="3" data-zone="2" data-name-lat="Norway" data-id="138">Норвегия</option><option value="United Arab Emirates,141" data-currency="2" data-zone="1" data-name-lat="United Arab Emirates" data-id="141">Объединенные Арабские Эмираты</option><option value="Oman,142" data-currency="2" data-zone="1" data-name-lat="Oman" data-id="142">Оман</option><option value="Pakistan,143" data-currency="2" data-zone="1" data-name-lat="Pakistan" data-id="143">Пакистан</option><option value="Palau,144" data-currency="2" data-zone="1" data-name-lat="Palau" data-id="144">Палау</option><option value="Palestine,211" data-currency="2" data-zone="1" data-name-lat="Palestine" data-id="211">Палестина</option><option value="Panama,145" data-currency="2" data-zone="3" data-name-lat="Panama" data-id="145">Панама</option><option value="Panama,146" data-currency="2" data-zone="3" data-name-lat="Panama" data-id="146">Панама</option><option value="Papua New Guinea,147" data-currency="2" data-zone="1" data-name-lat="Papua New Guinea" data-id="147">Папуа-Новая Гвинея</option><option value="Paraguay,149" data-currency="2" data-zone="1" data-name-lat="Paraguay" data-id="149">Парагвай</option><option value="Peru,150" data-currency="2" data-zone="3" data-name-lat="Peru" data-id="150">Перу</option><option value="Poland,152" data-currency="3" data-zone="2" data-name-lat="Poland" data-id="152">Польша</option><option value="Portugal,153" data-currency="3" data-zone="2" data-name-lat="Portugal" data-id="153">Португалия</option><option value="Russia,2" data-currency="2" data-zone="1" data-name-lat="Russia" data-id="2">Российская Федерация</option><option value="Rwanda,154" data-currency="2" data-zone="1" data-name-lat="Rwanda" data-id="154">Руанда</option><option value="Romania,155" data-currency="3" data-zone="2" data-name-lat="Romania" data-id="155">Румыния</option><option value="Samoa,53" data-currency="2" data-zone="1" data-name-lat="Samoa" data-id="53">Самоа</option><option value="San marino,157" data-currency="3" data-zone="2" data-name-lat="San marino" data-id="157">Сан-Марино</option><option value="Sao Tome and Principe,158" data-currency="2" data-zone="1" data-name-lat="Sao Tome and Principe" data-id="158">Сан-Томе и Принсипи</option><option value="Saudi Arabia,159" data-currency="2" data-zone="1" data-name-lat="Saudi Arabia" data-id="159">Саудовская Аравия</option><option value="Swaziland,160" data-currency="2" data-zone="1" data-name-lat="Swaziland" data-id="160">Свазиленд</option><option value="Seychelles,162" data-currency="2" data-zone="1" data-name-lat="Seychelles" data-id="162">Сейшельские острова</option><option value="Senegal,163" data-currency="2" data-zone="1" data-name-lat="Senegal" data-id="163">Сенегал</option><option value="Saint Kitts and Nevis,164" data-currency="2" data-zone="1" data-name-lat="Saint Kitts and Nevis" data-id="164">Сент-Китс и Невис</option><option value="Saint Lucia,165" data-currency="2" data-zone="1" data-name-lat="Saint Lucia" data-id="165">Сент-Люсия</option><option value="Serbia Republic,210" data-currency="3" data-zone="2" data-name-lat="Serbia Republic" data-id="210">Сербия Республика</option><option value="Singapore,166" data-currency="2" data-zone="1" data-name-lat="Singapore" data-id="166">Сингапур</option><option value="Syria,167" data-currency="2" data-zone="1" data-name-lat="Syria" data-id="167">Сирийская Арабская республика</option><option value="Slovakia,168" data-currency="3" data-zone="2" data-name-lat="Slovakia" data-id="168">Словакия</option><option value="Slovenia,169" data-currency="3" data-zone="2" data-name-lat="Slovenia" data-id="169">Словения</option><option value="UK,209" data-currency="3" data-zone="2" data-name-lat="UK" data-id="209">Соединенное Королевство Великобритании и Северной Ирландии</option><option value="USA,6" data-currency="2" data-zone="3" data-name-lat="USA" data-id="6">Соединенные Штаты Америки</option><option value="Solomon Islands,170" data-currency="2" data-zone="1" data-name-lat="Solomon Islands" data-id="170">Соломоновы острова</option><option value="Somalia,171" data-currency="2" data-zone="1" data-name-lat="Somalia" data-id="171">Сомали</option><option value="Sudan,172" data-currency="2" data-zone="1" data-name-lat="Sudan" data-id="172">Судан</option><option value="Suriname,173" data-currency="2" data-zone="1" data-name-lat="Suriname" data-id="173">Суринам</option><option value="Sierra Leone,174" data-currency="2" data-zone="1" data-name-lat="Sierra Leone" data-id="174">Сьерра-Леоне</option><option value="Tajikistan,175" data-currency="2" data-zone="1" data-name-lat="Tajikistan" data-id="175">Таджикистан</option><option value="Thailand,177" data-currency="2" data-zone="4" data-name-lat="Thailand" data-id="177">Таиланд</option><option value="Tanzania,178" data-currency="2" data-zone="1" data-name-lat="Tanzania" data-id="178">Танзания, объединенная республика</option><option value="Togo,181" data-currency="2" data-zone="1" data-name-lat="Togo" data-id="181">Того</option><option value="Tonga,180" data-currency="2" data-zone="1" data-name-lat="Tonga" data-id="180">Тонга</option><option value="Trinidad and Tobago,179" data-currency="2" data-zone="1" data-name-lat="Trinidad and Tobago" data-id="179">Тринидад и Тобаго</option><option value="Tuvalu,182" data-currency="2" data-zone="1" data-name-lat="Tuvalu" data-id="182">Тувалу</option><option value="Tunisia,15" data-currency="2" data-zone="1" data-name-lat="Tunisia" data-id="15">Тунис</option><option value="Turkmenistan,183" data-currency="2" data-zone="1" data-name-lat="Turkmenistan" data-id="183">Туркменистан</option><option value="Turkey,3" data-currency="2" data-zone="1" data-name-lat="Turkey" data-id="3">Турция</option><option value="Uganda,184" data-currency="2" data-zone="1" data-name-lat="Uganda" data-id="184">Уганда</option><option value="Uzbekistan,186" data-currency="2" data-zone="1" data-name-lat="Uzbekistan" data-id="186">Узбекистан</option><option value="Ukraine,185" data-currency="3" data-zone="2" data-name-lat="Ukraine" data-id="185">Украина</option><option value="Uruguay,188" data-currency="2" data-zone="3" data-name-lat="Uruguay" data-id="188">Уругвай</option><option value="Fiji,190" data-currency="2" data-zone="1" data-name-lat="Fiji" data-id="190">Фиджи</option><option value="Philippines,191" data-currency="2" data-zone="1" data-name-lat="Philippines" data-id="191">Филиппины</option><option value="Finland,192" data-currency="3" data-zone="2" data-name-lat="Finland" data-id="192">Финляндия</option><option value="France,12" data-currency="3" data-zone="2" data-name-lat="France" data-id="12">Франция</option><option value="Croatia,193" data-currency="3" data-zone="2" data-name-lat="Croatia" data-id="193">Хорватия</option><option value="Central African Republic,194" data-currency="2" data-zone="1" data-name-lat="Central African Republic" data-id="194">Центральноафриканская республика</option><option value="Chad,195" data-currency="2" data-zone="1" data-name-lat="Chad" data-id="195">Чад</option><option value="Montenegro,212" data-currency="3" data-zone="2" data-name-lat="Montenegro" data-id="212">Черногория</option><option value="Czech,196" data-currency="3" data-zone="2" data-name-lat="Czech" data-id="196">Чехия</option><option value="Chile,197" data-currency="2" data-zone="3" data-name-lat="Chile" data-id="197">Чили</option><option value="Switzerland,8" data-currency="3" data-zone="2" data-name-lat="Switzerland" data-id="8">Швейцария</option><option value="Sweden,198" data-currency="3" data-zone="2" data-name-lat="Sweden" data-id="198">Швеция</option><option value="Schengen,221" data-currency="3" data-zone="2" data-name-lat="Schengen" data-id="221">Шенген</option><option value="Sri Lanka,199" data-currency="2" data-zone="1" data-name-lat="Sri Lanka" data-id="199">Шри-Ланка</option><option value="Ecuador,201" data-currency="2" data-zone="3" data-name-lat="Ecuador" data-id="201">Эквадор</option><option value="Equatorial Guinea,202" data-currency="2" data-zone="1" data-name-lat="Equatorial Guinea" data-id="202">Экваториальная Гвинея</option><option value="El salvador,156" data-currency="2" data-zone="1" data-name-lat="El salvador" data-id="156">Эль-Сальвадор</option><option value="Eritrea,203" data-currency="2" data-zone="1" data-name-lat="Eritrea" data-id="203">Эритрея</option><option value="Estonia,200" data-currency="3" data-zone="2" data-name-lat="Estonia" data-id="200">Эстония</option><option value="Ethiopia,204" data-currency="2" data-zone="1" data-name-lat="Ethiopia" data-id="204">Эфиопия</option><option value="South Africa,206" data-currency="2" data-zone="1" data-name-lat="South Africa" data-id="206">Южно-Африканская Республика</option><option value="Jamaica,207" data-currency="2" data-zone="1" data-name-lat="Jamaica" data-id="207">Ямайка</option><option value="Japan,16" data-currency="2" data-zone="3" data-name-lat="Japan" data-id="16">Япония</option></select>
+                                            </select>
+                                            
+                                        </div>
+                                       
+                                        <div class="insurance__program  insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                            <label for="" class="insurance__program-label mb-lg-1 mb-1">Цель поездки</label>
+                                            <select class="insurance__program-aria select"  id="target"  >
+                                                <option value="">Укажите цель поездки </option>
+                                                <option value="1">Туризм, деловые поездки, гостевые поездки</option>
+                                                <option value="2">Спорт, участие в спортивных мероприятиях и тренировках</option>
+                                                <option value="3">Учеба</option>
+                                              </select>
+                                        </div>
+                                        
+                                        <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3   ">
+                                            
+                                            <div class="d-flex flex-column">
+                                                <div class=" d-flex flex-column ">
+                                                    <label for="" class=" insurance__program-label mb-lg-1 mb-1">Дата начала страховки:</label>
+                                                    <input type="text" id="date__start" class="dates__form insurance__program-aria"  placeholder="06.01.2023"  >
+                                                </div>
+                                                <div class="d-flex flex-column mt-lg-2 ">
+                                                    <label for="" class="mt-lg-2 mt-3 insurance__program-label mb-lg-1 mb-1">Дата окончания страховки:</label>
+                                                    <input type="text" id="date__end" class="dates__form insurance__program-aria"  placeholder="12.06.2023"  >
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                            </div>
+                                        </div>
+                                        <div class="row col-sm-6 me-lg-0 me-md-4 me-0 ">
+                                            <div class="insurance__right  ">
+                                                <div class="insurance__program  insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                    <label for="" class="insurance__program-label mb-lg-1 mb-1 notranslate locale-insurance-program-label">Страховая сумма</label>
+                                                    <select class="insurance__program-aria select" aria-label="Пример выбора по умолчанию" id="insurance__sum"  >
+                                                        <option value="">Выберите страховую сумму</option>
+                                                        <option value="1">20 000$</option>
+                                                        <option value="2">30 000$</option>
+                                                        <option value="2">50 000$</option>
+                                                      </select>
+                                                </div>
+                                                <div class="insurance__program  insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                    <label for="" class="insurance__program-label mb-lg-1 mb-1 notranslate locale-insurance-program-label" >Вы резидент РК?</label>
+                                                    <select class="insurance__program-aria select" aria-label="Пример выбора по умолчанию" id="RK"  >
+                                                        <option value="">Вы резидент РК? </option>
+                                                        <option value="1">Да</option>
+                                                        <option value="2">Нет</option>
+                                                      </select>
+                                                </div>
+                                        <div class="insurance__program  insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                            <label for="" class="insurance__program-label mb-lg-1 mb-1">Email</label>
+                                            <input type="email" class="insurance__program-aria" placeholder="Введите ваш Email"  >
+                                            
+                                        </div>
+                                        <div class="insurance__program insurance__form-block flex-column  mb-lg-4 mb-3 hidden-month ">
+                               
+                                            <div class=" d-flex flex-column w-100">
+                                                <label for="" class="mb-lg-2 mb-2 ">Укажите срок действия страховки:</label>
+                                                <select name="months" id="months" class="insurance__program-aria select"  >
+                                                    <option selected="" data-select2-id="7">Укажите срок действия страховки</option>
+                                                    <option value="1" data-translate="translate" data-caption="days_title_value_1" data-select2-id="223">1 месяц (дней не более 15)</option>
+                                                    <option value="3" data-translate="translate" data-caption="days_title_value_2" data-select2-id="224">3 месяца (дней не более 30)</option>
+                                                    <option value="6" data-translate="translate" data-caption="days_title_value_3" data-select2-id="225">6 месяцев (дней не более 45)</option>
+                                                    <option value="6p" data-translate="translate" data-caption="days_title_value_4" data-select2-id="226">6 месяцев (дней не более 90)</option>
+                                                    <option value="12" data-translate="translate" data-caption="days_title_value_5" data-select2-id="227">12 месяцев (дней не более 90)</option>
+                                                    <option value="12p" data-translate="translate" data-caption="days_title_value_5" data-select2-id="228">12 месяцев (дней не более 90)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="insurance__program insurance__form-block flex-column  mb-lg-4 mb-3  hidden-sportype">
+                               
+                                            <div class=" d-flex flex-column w-100">
+                                                <label for="" class="mb-lg-2 mb-2 ">Виды спорта:</label>
+                                                <select name="sport_type" id="sporttype" class="form-control select insurance__program-aria" >
+                                                    <option value="" data-select2-id="11">Укажите вид спорта</option>
+                                                    <option value="winter" data-translate="translate" data-caption="sport_value_1" data-select2-id="234">Зимние виды спорта&nbsp;(кроме горных лыж</option>
+                                                    <option value="skies" data-translate="translate" data-caption="sport_value_2" data-select2-id="235">Горнолыжный спорт</option>
+                                                    <option value="diving" data-translate="translate" data-caption="sport_value_3" data-select2-id="236">Подводное плавание, прыжки в воду</option>
+                                                    <option value="race" data-translate="translate" data-caption="sport_value_4" data-select2-id="237">Авто(мото)гонки</option>
+                                                    <option value="bike" data-translate="translate" data-caption="sport_value_5" data-select2-id="238">Велосипед</option>
+                                                    <option value="mountain" data-translate="translate" data-caption="sport_value_6" data-select2-id="239">Альпинизм, горный туризм, сплав</option>
+                                                    <option value="game" data-translate="translate" data-caption="sport_value_7" data-select2-id="240">Игровые виды спорта</option>
+                                                    <option value="athletic" data-translate="translate" data-caption="sport_value_8" data-select2-id="241">Легкая, тяжелая атлетика, гимнастика</option>
+                                                    <option value="combat" data-translate="translate" data-caption="sport_value_9" data-select2-id="242">Единоборства</option>
+                                                    <option value="parachute" data-translate="translate" data-caption="sport_value_10" data-select2-id="243">Дельтапланеризм, парапланеризм, парашютный спорт</option>
+                                                    <option value="horse" data-translate="translate" data-caption="sport_value_11" data-select2-id="244">Конный спорт</option>
+                                                    <option value="swimming" data-translate="translate" data-caption="sport_value_12" data-select2-id="245">Плавание, парусный спорт</option>
+                                                    <option value="other" data-translate="translate" data-caption="sport_value_13" data-select2-id="246">Другое</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="insurance__program insurance__form-block flex-column  mb-lg-4 mb-3  hidden-sportcategory">
+                               
+                                            <div class=" d-flex flex-column w-100">
+                                                <label for="" class="mb-lg-2 mb-2 ">Степень занятий:</label>
+                                                <select name="sport_category" id="categorysporttype" class="form-control  select insurance__program-aria" >
+                                                    <option value="" data-select2-id="13">Укажите cтепень занятий</option>
+                                                    <option value="kid" data-translate="translate" data-caption="sport_degree_value_1" data-select2-id="248">Дети до 16 лет</option>
+                                                    <option value="professional" data-translate="translate" data-caption="sport_degree_value_2" data-select2-id="249">Профессиональный спорт</option>
+                                                    <option value="invalid" data-translate="translate" data-caption="sport_degree_value_3" data-select2-id="250">Спортсмены - инвалиды</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12 ms-lg-1 ms-0" >
+                                        <div class="insurance__more">
+                                        <div class="insurance__more-top">
+                                            <div class="flex-column d-flex mb-lg-3 mb-2">
+                                                <p class="insurance__more-title ">Полис</p>
+                                                <p class="insurance__more-subtitle">Путешествия</p>
+                                            </div>
+                                            <div class="flex-column d-flex mb-lg-3 mb-2">
+                                                <p class="insurance__more-title ">Страна</p>
+                                                <p class="insurance__more-subtitle" id="countrySelected">Не выбрана</p>
+                                            </div>
+                                            <div class="flex-column d-flex mb-lg-3 mb-2">
+                                                <p class="insurance__more-title ">Дата</p>
+                                                <p class="insurance__more-subtitle" id="dateSelected">Дата не выбрана</p>
+                                            </div>
+                                        
+                                        <hr class="insurance__more-hr mb-lg-3 mt-lg-3 mt-2 mb-2">
+                                    </div>
+                                        <div class="insurance__more-bottom">
+                                            <div class="insurance__price d-flex justify-content-between align-items-center mb-sm-2 mb-3">
+                                                <p class="insurance__price-title ">Стоимость страховки</p>
+                                                <p class="insurance__price-subtitle ">1 000 <span class="notranslate locale-insurance-price">тг</span></p>
+                                            </div>
+                                            <div class="insurance__price d-flex justify-content-between align-items-center mb-sm-2 mb-3">
+                                                <p class="insurance__price-title">Стоимость страховки</p>
+                                                <p class="insurance__price-subtitle ">1 000 <span class="notranslate locale-insurance-price">тг</span></p>
+                                            </div>
+                                            <div class="insurance__price d-flex justify-content-between align-items-center mb-sm-4 mb-3">
+                                                <p class="insurance__price-title">Стоимость страховки</p>
+                                                <p class="insurance__price-subtitle ">1 000 <span class="notranslate locale-insurance-price">тг</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="insurance__button w-100 d-flex justify-content-center align-items-center" >Оформить полис</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                                <form action=""  class=" block__insurance-form2 " id="section2">
+                                    <h1 class="insurance__info-title text-center mb-lg-5 mb-3">Данные страхователя</h1>
+                                        <div class="sub-forms col-12">
+                                        <div class=" d-flex flex-column   me-lg-3">
+                                                <div class="d-flex justify-content-md-between justify-content-center align-items-md-start align-items-center insurance-second-block ">
+                                                    <div class="row col-md-4 col-12">
+                                                        <div class="insurance__first  insurance-flex  justify-content-center flex-column align-items-center ">
+                                                            <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3   ">
+                                                                <label for="" class="insurance__program-label mb-lg-1 mb-1">Имя</label>
+                                                                <input type="text" class="insurance__program-aria" id="Name1">
+                                                            </div>
+                                                            <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                                <label for="" class="insurance__program-label mb-lg-1 mb-1">ИИН</label>
+                                                                <input type="text" class="insurance__program-aria" id="IIN">
+                                                            </div>
+                                                            <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                                <label for="" class=" insurance__program-label mb-lg-1 mb-1">Дата рождения:</label>
+                                                            
+                                                                <input type="text"  class="dates__form insurance__program-aria" onclick="dateSel()"  id="dateBirthday1" placeholder="06.01.2023"  >
+                                                            </div>
+                                                            <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                                <div class="form__input-file">
+                                                                    <label for="" class=" insurance__program-label mb-lg-1 mb-1">Копии документов:</label>
+                                                                    <input class=" field__file" type="file" id="uploaddocs1" multiple>
+                                                                    <label for="file" class="insurance__program-aria insurance-upload d-flex align-items-center justify-content-between pe-0">
+                                                                        
+                                                                        <span class="file-text">Выбрать файл</span>
+                                                                        <div class="file-img" style="background: #0172B7; border-left: 1px solid #000000;">
+                                                                            <img src="/img/upload.svg" alt="">
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="row col-md-4 col-12 ">
+                                                <div class="insurance__two insurance-flex    justify-content-center flex-column align-items-center">
+                                                    <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1">Фамилия</label>
+                                                        <input type="text" class="insurance__program-aria" id="LastName1">
+                                                    </div>
+                                                    <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1">Номер паспорта</label>
+                                                        <input type="text" class="insurance__program-aria" id="pasport1">
+                                                    </div>
+                                                    <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                        <label for="" class=" insurance__program-label mb-lg-1 mb-1">Дата выдачи паспорта:</label>
+                                                        <input type="text"  class="dates__form insurance__program-aria" onclick="dateSel()" placeholder="06.01.2023" id="datePasportStart1"  >
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                                    </div>
+                                                    <div class="row col-md-4 col-12">
+
+                                                        <div class="insurance__three insurance-flex justify-content-center flex-column align-items-center">
+                                                    <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1">Номер телефона</label>
+                                                        <input type="tel" class="insurance__program-aria" id="Phone1" data-tel-input>
+                                                    </div>
+                                                    <div class="insurance__program  insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1">Укажите страну</label>
+                                                        <select class="insurance__program-aria select" aria-label="Пример выбора по умолчанию" id="country-people1"  >
+                                                            <option value="">Вы резидент РК? </option>
+                                                            <option value="1">Да</option>
+                                                            <option value="2">Нет</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1">Адрес</label>
+                                                        <input type="text" class="insurance__program-aria" id="adress1">
+                                                    </div>
+                                                    
+                                                    <div class="insurance__program insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <div class="form__action-people ">
+                                                            <div class="form__add-people-block d-flex align-items-center form__action-block mb-lg-3" onclick="AddPeople()">
+                                                                
+                                                                <p class="form__add-people-text form__action-text">Добавить</p>
+                                                                <div class="form__add-people-img form__action-img ms-3">
+                                                                    <img   src="/img/plus-tourist.svg" alt="" >
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="checkbox__block mb-3">
+                                                <div class="d-flex mb-lg-2 mb-2">
+                                                    <input type="checkbox" class="insurance__checkbox-checkbox me-2">
+                                                    <p class="insurance__checkbox-text">Согласен на обработку персональных данных</p>
+                                                </div>
+                                                <div class="d-flex mb-lg-3 mb-2">
+                                                    <input type="checkbox" class="insurance__checkbox-checkbox me-2">
+                                                    <p class="insurance__checkbox-text">C правами ознакомлен</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center text-center">
+                                                <div  class=" insurance__button-second-section insurance__people-button col-8 d-flex  justify-content-center align-items-center">Оформить полис</div>
+                                            </div>
+                                        </div>
+
+                                    <div class="toast   position-absolute" role="alert" aria-live="assertive" aria-atomic="true">
+                                        <div class="toast-header justify-content-between" data-bs-autohide="false">
+                                            <p class="toast-title mb-0">Ошибка!!!</p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                            Привет мир! Это тост-сообщение.
+                                        </div>
+                    
+                    
+                                    </div>
+                                    </div>                             
+                                </form>
+                                <form action=""  class=" block__insurance-form3" id="section3">
+                                    <h1 class="insurance__info-title text-center mb-lg-5 mb-3">Итоговая стоимость полиса</h1>
+                                    <div class="col-12  flex-column align-items-center  me-lg-3">
+                                        <div class="d-flex justify-content-md-between justify-content-center  flex-wrap">
+                                            <div class="row col-md-4 col-12">
+                                                <div class="insurance__first me-lg-5 ">
+                                                    <div class=" insurance__program total-block total-block-right insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <label for="" class="insurance__program-label total-label mb-lg-1 mb-1">ФИО туристов:</label>
+                                                        <hr class="block__insurance-form3-hr">
+                                                        <div class="tourist__info d-flex">
+                                                            <p class="tourist__info-num tourist__info-text me-2">1)</p>
+                                                            <p class="tourist__info-text" id="total-form">Миерманов А.А.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" insurance__program total-block total-block-right insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1 total-label">Cтраховая сумма:</label>
+                                                        <hr class="block__insurance-form3-hr">
+                                                        <p class="tourist__info-text" id="total-money">30000€</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-4 col-12">
+                                                <div class="insurance__two  me-lg-5 ">
+                                                    <div class=" insurance__program total-block total-block-right insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1 total-label">Cтрана:</label>
+                                                        <hr class="block__insurance-form3-hr">
+                                                        <div class="tourist__info d-flex">
+                                                            <p class="tourist__info-num tourist__info-text me-2">1)</p>
+                                                            <p class="tourist__info-text" id="total-country">Гринландия</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" insurance__program total-block total-block-right insurance__form-block flex-column d-flex mb-lg-4 mb-3 ">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1 total-label">Дата начала:</label>
+                                                        <hr class="block__insurance-form3-hr">
+                                                        <p class="tourist__info-text" id="total-dateStart">27.02.2023</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-4 col-12">
+                                                <div class="insurance__three  ">
+                                                    <div class=" insurance__program total-block insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1 total-label">Номер телефона:</label>
+                                                        <hr class="block__insurance-form3-hr">
+                                                        <p class="tourist__info-text" id="total-phone">8(771)411-07-05</p>
+                                                    </div>
+                                                    <div class=" insurance__program total-block insurance__form-block flex-column d-flex mb-lg-4 mb-3">
+                                                        <label for="" class="insurance__program-label mb-lg-1 mb-1 total-label">Дата окончания:</label>
+                                                        <hr class="block__insurance-form3-hr">
+                                                        <p class="tourist__info-text" id="total-dateEnd">27.03.2023</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-lg-5 mb-3 total__block-price">
+                                            <p class="total__text-total">Итого:</p>
+                                            <p class="total__text-num">15,576 <span class="notranslate locale-insurance-price">тг</span></p>
+                                        </div>
+                                        <div class="message-total d-flex justify-content-center align-items-center mb-lg-5 mb-3">
+                                            <img src="/img/attention.svg" class="message-total-img me-3" alt="">
+                                            <p class="message-total-text">Наш менеджер скоро свяжется с вами!</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center text-center">
+                                            <a href="/index.html"  class=" insurance__button-second-section insurance__people-button col-8 d-flex  justify-content-center align-items-center">На главную</a>
+                                        </div>
+                                    </div>
+                                </form>
+                               
+                            </div>
+
+                           
+                       
+                    </div>
+                    
+                
+                </section>
+                <section class="case" id="case">
+                <div class="row">
+                    <div class="case__block d-flex justify-content-xxl-center justify-content-md-between align-items-center">
+                        <div class="case__text me-lg-5 me-md-4">
+                            <h2 class="case__text-title mb-lg-3 mb-4 ">Что делать при страховом случае?</h2>
+                            <ul class="case__item">
+                                <li class="case__link">Позвоните в круглосуточный колл-центр по номеру  +7 727 3200 200.</li>
+                                <li class="case__link">Оператор подберет лучшее медицинское учреждение и поможет получить качественную помощь медиков.</li>
+                                <li class="case__link">Или получите медицинскую помощь сами, а мы компенсируем расходы</li>
+                            </ul>
+                        </div>
+                        <div class="case__img">
+                            <img src="/img/insurance__img.png" alt="" class="w-100 case__img-image">
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section class="docs " id="docs">
+                <div class="row">
+                    <div class="docs__block d-flex justify-content-between align-items-center flex-column">
+                    <h1 class="docs-title mb-lg-5 mb-5">Документы</h1>
+                    <div class="docs__cards col-12 d-flex col flex-wrap align-items-start  justify-content-between">
+                        <div class="docs__card col-lg-5   d-flex flex-column justify-content-center align-items-center mb-lg-5 mb-5 me-5">
+                            <div class="d-flex">
+                                <div class="docs-img me-lg-3 me-5"><img src="/img/docs-img.svg" alt="" class="docs__image"></div>
+                                <p class="docs-text ">Информация Министра иностранных дел Республики Польши о страховщиках и предлагаемых ими страховках, отвечающих необходимым условиям в Польше согласно статье 25 (1) (2) (a) и статье 25 (1b) Закона Республики Польши от 12 декабря 2013 г. «Об иностранцах»</p>
+                            </div>
+                            <div class="d-flex  align-items-center docs-info mt-lg-3  justify-content-between ">
+                                <a href="/ENG_Lista_ubezpieczycieli_i_oferowanych_produktów_ubezpieczeniowych_nowelizacja (3).pdf" download=""  class="docs-read">Читать</a>
+                                <p class="docs-date">25.12.2017</p>
+                            </div>
+                        </div>
+                        <div class="docs__card col-lg-5 d-flex flex-column justify-content-center align-items-center mb-lg-0 mb-5 me-5">
+                            <div class="d-flex">
+                                <div class="docs-img me-lg-3 me-5"><img src="/img/docs-img.svg" alt="" class="docs__image"></div>
+                                <p class="docs-text">Просим Вас скачать и распечатать ответ-разъяснение МИД РК № 1-22/2820 от 14.02.2022г. после оформления полиса.</p>
+                            </div>
+                            <div class="d-flex  align-items-center docs-info mt-lg-3  justify-content-between ">
+                                <a href="/MID_1-22-2820.pdf" download="" class="docs-read">Читать</a>
+                                <p class="docs-date">25.12.2017</p>
+                            </div>
+                        </div>
+                        <div class="docs__card col-lg-5 d-flex flex-column justify-content-center align-items-center mb-lg-0 mb-5">
+                            <div class="d-flex">
+                                <div class="docs-img me-lg-3 me-5"><img src="/img/docs-img.svg" alt="" class="docs__image"></div>
+                                <p class="docs-text">Правила страхования - ОБЪЕКТЫ СТРАХОВАНИЯ,СТРАХОВОЙ СЛУЧАЙ,ОГРАНИЧЕНИЯ СТРАХОВАНИЯ И ИСКЛЮЧЕНИЯ ИЗ СТРАХОВЫХ СЛУЧАЕВ,СРОК И ТЕРРИТОРИЯ ДЕЙСТВИЯ ДОГОВОРА СТРАХОВАНИЯ</p>
+                            </div>
+                            <div class="d-flex  align-items-center docs-info mt-lg-3  justify-content-between ">
+                                <a href="/rules.doc" download="" class="docs-read">Читать</a>
+                                <p class="docs-date">25.12.2017</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+           
+        </div>
+    
+    </main>
+    
+    <footer>
+    
+        <div style="min-height: 3px;
+    margin-top: 0%;
+    margin-bottom: 1%;
+        background-color: #08367b;"></div>
+        <div class="container">
+        <div class="container__footer">
+            <div class="row">
+                <div class="footer-col2">
+                    <h2>Медицинский ассистанс</h2>
+                </div>
+                <div class="footer-col">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="https://go.2gis.com/3tc4f">Организация медицинских пунктов в отдаленных районах</a>
+                        </li>
+                        <li><a href="https://www.interteach.kz/soprovozhdenie-massovyh-meropriyatiy-50/">Медицинское сопровождение мероприятий</a></li>
+    
+                        <li><a href="https://www.interteach.kz/evakuaciya-i-repatriaciya-35/">Организация медицинской репатриации и эвакуации</a></li>
+                        <li><a href="https://www.interteach.kz/kursy-pervoy-pomoschi-40/">Организация курсов первой медицинской помощи</a></li>
+                        <li><a href="https://go.2gis.com/gy0iu">Организация функциональной и лабораторной диагностики</a></li>
+                        <li><a href="https://www.interteach.kz/profosmotry-39/">Организация профосмотров всех видов (в том числе OGUK)</a></li>
+                        <li><a href="https://dms.interteach.kz/#">Организация второго мнения врача</a></li>
+                        <li><a href="https://www.interteach.kz/medicinskaya-i-sestrinskaya-pomosch-na-domu-42/">Организация сестринской и медицинской помощи на дому</a></li>
+                        <li><a href="https://www.interteach.kz/catalog/medicinskoe-obsluzhivanie-5/">Программы медицинского обслуживания</a></li>
+                        <br>
+    
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Тестирование на антитела</h4>
+                    <ul>
+                        <li><a href="https://go.2gis.com/3tc4f">ПЦР тестирование на антитела SARS-Cov-2</a>
+                        </li>
+                        <li><a href="https://go.2gis.com/0yv12m">ИФА тестирование на антитела SARS-CoV-2</a></li>
+    
+                        <br>
+    
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Е-услуги</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/covid-test/">Проверить результат теста ПЦР/ИФА</a></li>
+                        <li><a href="https://www.interteach.kz/check/">Проверить полис обятазельного страхования туриста</a>
+                        </li>
+                        <li><a href="https://www.interteach.kz/check/">Проверить полис добровольного страхования туриста</a>
+                        </li>
+                        <li><a href="https://www.interteach.kz/check/">Проверить полис ГПО владельцев транспортных
+                            средств</a></li>
+                        <li><a href="https://www.interteach.kz/rc/">Проверить рецепт, справку и прочий медицинский
+                            документ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Экстренные контакты при наступлении страхового случая</h4>
+                    <h4>Интертич Медицинский Ассистанс</h4>
+    
+                    <ul>
+                        <li><a href="tel:+77273200200">+7 727 3200 200 (круглосуточный)</a></li>
+                        <li><a href="https://www.interteach.kz/check/">callcenter@interteach.kz</a>
+                        </li>
+    
+                    </ul>
+                    
+    
+    
+                </div>
+    
+    
+            </div>
+    
+        
+      
+            <div class="row">
+                <div class="footer-col2">
+                    <h2>Клиники</h2>
+                </div>
+                <div class="footer-col">
+                    <h4>Алматы</h4>
+                    <ul>
+                        <li><a href="https://almaty.interteach.kz/" target="_blank">Перейти на сайт almaty.interteach.kz
+                            →</a></li>
+                        <li><a href="https://go.2gis.com/3tc4f">пр. Назарбаева, 275Е (уг. ул. Хаджи Мукана)</a></li>
+                        <p><a href="tel:+77273200200">+7 (727) 3 200 200</a></p>
+                        <p><a href="tel:+77019818154">+7 (701) 981 81 54</a></p>
+                        <p><a href="tel:+77470944691">+7 (747) 094 46 91</a></p>
+    
+    
+                        <br>
+                        <li><a href="https://go.2gis.com/0yv12m">пр. Назарбаева, 111/48 (уг. ул. Казыбек Би)</a></li>
+                        <p><a href="tel:+77272282800">+7 (727) 228 28 00</a></p>
+                        <p><a href="tel:+77273383100">+7 (727) 338 31 00</a></p>
+    
+                        <br>
+                        <li><a href="https://go.2gis.com/9d1ey">ул. Искендерова, 21</a></li>
+                        <p><a href="tel:+77273200205">+7 (727) 3 200 205</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/mxjkm">мкр. 6, д. 16</a></li>
+                        <p><a href="tel:+77273200207">+7 (727) 3 200 207</a></p>
+                        <p><a href="tel:+77017181002">+7 (701) 718 10 02</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/8cdmwe">ул. Мендикулова, 49</a></li>
+                        <p><a href="tel:+77273441144">+7 (727) 344 11 44</a></p>
+                        <p><a href="tel:+77273441145">+7 (727) 344 11 45</a></p>
+    
+                        <br>
+                        <li><a href="https://go.2gis.com/gy0iu">ул. Кабанбай батыра, 122А</a></li>
+                        <p><a href="tel:+77272251212">+7 (727) 225 12 12</a></p>
+                        <br>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Астана</h4>
+                    <ul>
+                        <li><a href="https://astana.interteach.kz/" target="_blank">Перейти на сайт
+                            astana.interteach.kz →</a></li>
+                        <li><a href="https://go.2gis.com/3rupq">ул. Кабанбай батыра, 48/6 (ЖК «Времена Года»)</a></li>
+                        <p><a href="tel:+77010269454">+7 (701) 026 94 54</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/85x9b">ул. Кабанбай батыра, 7 (ЖК «Премьера»)</a></li>
+                        <p><a href="tel:+77010269460">+7 (701) 026 94 60</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/s9nbf">ул. Кенесары, 1 (угол ул. Кумисбекова)</a></li>
+                        <p><a href="tel:+77172515300">+7 (7172) 515 300</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/hvllhn">ул. Динмухамеда Конаева, 8 (БЦ «Изумрудный квартал»)</a>
+                        </li>
+                        <br>
+                        <li><a href="https://go.2gis.com/q3ua1s">ул. ​Сыганак, 17/12</a></li>
+                        <p><a href="tel:+77470948408">+7 (747) 094 84 08</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/3rupq">ул. Московская, 38А (угол ул. Мира)</a></li>
+                        <p><a href="tel:+77172539618">+7 (7172) 539 618</a></p>
+    
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Атырау</h4>
+                    <ul>
+                        <li><a href="https://atyrau.interteach.kz/" target="_blank">Перейти на сайт atyrau.interteach.kz
+                            →</a></li>
+                        <li><a href="https://go.2gis.com/ztymm">пр. Исатая Тайманова, 48 (ЖК «Zaman»)</a></li>
+                        <p><a href="tel:+77022231319">+7 (702) 223 13 19</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/uhmp1">ул. Владимирского, 103</a></li>
+                        <p><a href="tel:+77122281111">+7 (7122) 28 11 11</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/kg1w8">ул. Владимирского, 98А</a></li>
+                        <p><a href="tel:+77122284020">+7 (7122) 28 40 20</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/uzeupu">ул. Сатпаева, 17</a></li>
+                        <p><a href="tel:+77122202556">+7 (7122) 202 556</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/gp0pcv">ул. Сатпаева, 34</a></li>
+                        <p><a href="tel:+77122201013">+7 (7122) 20 10 13</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/ejkp8m">ул. Валиханова, 6</a></li>
+                        <p><a href="tel:+77122512116">+7 (7122) 28 40 20</a></p>
+                        <br>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Аксай</h4>
+                    <ul>
+                        <li><a href="https://aksay.interteach.kz/" target="_blank">Перейти на сайт aksay.interteach.kz →</a>
+                        </li>
+                        <li><a href="https://go.2gis.com/kchr6h">пр. Абая, 22</a></li>
+                        <p><a href="tel:+77052740175">+7 (705) 274 0175</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/vw199">пр. Абая, 34/1</a></li>
+                        <p><a href="tel:+77113330800">+7 (7113) 330 800</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/5hiub">ул. Дружбы народов, д. 2/2 А</a></li>
+                        <p><a href="tel:+77770615840">+7 (777) 061 5840</a></p>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Актобе</h4>
+                    <ul>
+                        <li><a href="https://aktobe.interteach.kz/" target="_blank">Перейти на сайт aktobe.interteach.kz
+                            →</a></li>
+                        <li><a href="https://go.2gis.com/1z44l">ул. Пацаева 20</a></li>
+                        <p><a href="tel:+77132550859">+7 (7132) 55-08-59</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/nxe4ea">ул. Братьев Жубановых, 256</a></li>
+                        <p><a href="tel:+77770313478">+7 (777) 031-34-78</a></p>
+                        <br>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Актау</h4>
+                    <ul>
+                        <li><a href="https://aktau.interteach.kz/" target="_blank">Перейти на сайт aktau.interteach.kz →</a>
+                        </li>
+                        <li><a href="https://go.2gis.com/lsapd">мкр. 26, № 61, Больничный городок, здание "Интертич"</a>
+                        </li>
+                        <p><a href="tel:+77292212903">+7 (7292) 212 903</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/6js7m">мкр. 12, № 22/1, здание "Интертич"</a></li>
+                        <p><a href="tel:+77292200128">+7 (7292) 200 128</a></p>
+    
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Баутино</h4>
+                    <ul>
+                        <li><a href="https://bautino.interteach.kz/" target="_blank">Перейти на сайт bautino.interteach.kz
+                            →</a></li>
+                        <li><a href="https://go.2gis.com/f4zgd">Мангистауская обл, г. Форт-Шевченко, пос. Баутино, ул.
+                            Захара Дубского 53</a></li>
+                        <p><a href="tel:+77293822956">+7 (72938) 22 956</a></p>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Кызылорда</h4>
+                    <ul>
+                        <li><a href="https://kyzylorda.interteach.kz/" target="_blank">Перейти на сайт
+                            kyzylorda.interteach.kz →</a></li>
+                        <li><a href="https://goo.gl/maps/Gp3eJLbkLrmsn33EA">ул. Абылхаир хана 68, уг. ул. Байтурсынова</a>
+                        </li>
+                        <p><a href="tel:+77242271556">+7 (7242) 271 556</a></p>
+                        <br>
+                        <li><a href="https://goo.gl/maps/RUxiNxRQhC4C2Q6cA">ул. Байсеитова, 97</a></li>
+                        <p><a href="tel:+77770615840">+7 (777) 061 5840</a></p>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Кульсары</h4>
+                    <ul>
+                        <li><a href="https://kulsary.interteach.kz/" target="_blank">Перейти на сайт kulsary.interteach.kz
+                            →</a></li>
+                        <li><a href="https://goo.gl/maps/7GCBXf1KxqNfcZs66">Жылыойский район, ул. Абдрахманова 29 б</a></li>
+                        <p><a href="tel:+77123751337">+7 (71237) 513 37</a></p>
+                        <br>
+                        <li><a href="https://goo.gl/maps/f3PgGFSTcKPMgNCP6">Жылыойский район, ул. Абдрахманова 29В</a></li>
+                        <p><a href="tel:+77123750368">+7 (71237) 503 68</a></p>
+                        <br>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Тенгиз</h4>
+                    <ul>
+                        <li><a href="https://tengiz.interteach.kz/" target="_blank">Перейти на сайт tengiz.interteach.kz
+                            →</a></li>
+                        <li><a href="https://dms.interteach.kz/#">Квартал № 3, № 15, 26</a></li>
+                        <p><a href="tel:+77025963959">+7 (702) 596 39 59</a></p>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Уральск</h4>
+                    <ul>
+                        <li><a href="https://uralsk.interteach.kz/" target="_blank">Перейти на сайт uralsk.interteach.kz
+                            →</a></li>
+                        <li><a href="https://go.2gis.com/3bu5d">ул. Сейфуллина, 34</a></li>
+                        <p><a href="tel:+77112241564">+7 (7112) 24 15 64</a></p>
+                        <br>
+                        <li><a href="https://go.2gis.com/34x2ks">мкр. Строитель, 2/6</a></li>
+                        <p><a href="tel:+77112234444">+7 (7112) 23 44 44</a></p>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Шымкент</h4>
+                    <ul>
+                        <li><a href="https://shymkent.interteach.kz/" target="_blank">Перейти на сайт shymkent.interteach.kz
+                            →</a></li>
+                        <li><a href="https://go.2gis.com/qg7p3i">ул. Казыбек Би, 24</a></li>
+                        <p><a href="tel:+77252530532">+7 (7252) 530 532</a></p>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+      
+    
+    
+       
+    
+       
+            <div class="row">
+    
+                <div class="footer-col2">
+                    <h2>Страхование</h2>
+                </div>
+                <div class="footer-col">
+                    <h4>Добровольное страхование лиц, выезжающих за рубеж</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/strahovanie-lic-vyezzhayuschih-za-rubezh-44/">Подробнее</a>
+                        </li>
+                        <li><a href="https://dms.interteach.kz/">Купить онлайн</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Обязательное страхование ГПО владельцев транспортных средств</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.interteach.kz/obyazatelnoe-strahovanie-gpo-vladelcev-transportnyh-sredstv-36/">Подробнее</a>
+                        </li>
+                        <li><a href="https://online.interteach.kz/">Купить онлайн</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Обязательное страхование туриста</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/obyazatelnoe-strahovanie-turista-275/">Подробнее</a></li>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Добровольное медицинское страхование для трудовых мигрантов</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.interteach.kz/dobrovolnoe-medicinskoe-strahovanie-dlya-trudovyh-migrantov-43/">Подробнее</a>
+                        </li>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Добровольное медицинское страхование на случай болезни</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/programmy-prikrepleniya-49/">Подробнее</a></li>
+    
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Добровольное страхование имущества</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/ds-imuschestva-18/">Подробнее</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Добровольное страхование от несчастных случаев</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/ds-ot-neschastnyh-sluchaev-13/">Подробнее</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Добровольное страхование автомобильного транспорта (КАСКО)</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/ds-transporta-kasko-19/">Подробнее</a></li>
+                        <br>
+                        <br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Добровольное страхование ГПО перед третьими лицами</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/ds-gpo-pered-tretimi-licami-17/">Подробнее</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Обязательное страхование ГПО перевозчика перед пассажирами</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/os-perevozchika-pered-passazhirami-14/">Подробнее</a></li>
+                    </ul>
+                </div>
+           
+        </div>
+       
+    
+        
+            <div class="row">
+                <div class="footer-col2 mt-5 mb-3">
+                    <h2>О компании</h2>
+                </div>
+    
+                <div class="footer-col ">
+                    <h4>О компании</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/istoriya-kompanii-24/">История компании</a></li>
+                        <li><a href="https://www.interteach.kz/missiya-i-cennosti-4/">Миссия и ценности</a></li>
+                        <li><a href="https://www.interteach.kz/rukovodstvo-283/">Руководство</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Рейтинги, лицензии и сертификаты</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/reytingi-28/">Рейтинги</a></li>
+                        <li><a href="https://www.interteach.kz/gallery/licenzii-3/">Лицензии</a></li>
+                        <li><a href="https://www.interteach.kz/gallery/sertifikaty-1/#%22">Сертификаты</a></li>
+    
+                    </ul>
+                </div>
+    
+    
+    
+    
+                <div class="footer-col">
+                    <h4>HR пространство</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/vakansii-segodnya-279/">Вакансии</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="https://dms.interteach.kz/#">050040, г. Алматы, Республика Казахстан пр. Нурсултана Назарбаева 269</a></li>
+                        <li><a href="tel:+77273200206">+7 (727) 3 200 206</a></li>
+                        <li><a href="tel:+77273200200">+7 (727) 3 200 200 (24x7)</a></li>
+                        <li><a href="mailto:interteach@interteach.kz">interteach@interteach.kz</a></li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer-col">
+                    <h4>Пресс центр</h4>
+                    <ul>
+                        <li><a href="https://www.interteach.kz/smi-o-nas-57/">СМИ о нас</a></li>
+                        <li><a href="https://www.interteach.kz/news/">Новости компании</a></li>
+                        <li><a href="https://www.interteach.kz/kontakty-dlya-smi-281/">Контакты для СМИ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Мобильное приложение</h4>
+                    <div class="social-links">
+                        <a href="https://play.google.com/store/apps/details?id=kz.interteach.app" style="width: 200px; height: 60px"><img src="/img/playMarket.png" width="200" height="60"></a>
+                        <br>
+                        <br>
+                        <a href="https://apps.apple.com/kz/app/interteach-medical-assistance/id1608481158?uo=4&amp;at=1010lpjB&amp;ct=tas" style="width: 200px; height: 60px"><img src="/img/appStore.png" width="200" height="60"></a>
+    
+                        <br>
+                        <br>
+                        <a href="https://appgallery.huawei.com/app/C106705589" style="width: 200px; height: 60px"><img src="/img/AppGallery.png" width="200" height="60"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="https://ru-ru.facebook.com/interteach.kz/"><img src="/img/facebook.svg" alt="" class="footer-social"></a>
+                        <a href="https://twitter.com/JSC_INTERTEACH"><img src="/img/twitter.svg" alt="" class="footer-social"></a>
+                        <a href="https://instagram.com/interteach_global?utm_medium=copy_link"><img src="/img/instagram.svg" alt="" class="footer-social"></a>
+                        <a href="https://kz.linkedin.com/in/%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%82%D0%B8%D1%87-267048115"><img src="/img/Linkedin.svg" alt="" class="footer-social"></a>
+                    </div>
+                    <div class="social-links">
+                        <img src="/img/logo-ru.svg" width="280" height="60">
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+        
+        <div class="row" style=" width: 100%;  margin-top: 40px">
+            <div class="footer-col" style="width: 100%">
+                <ul>
+                    <li><a class="one" href="https://www.interteach.kz/" style="font-size: 12px !important;">© 2023 -
+                        Корпорация Интертич | Все права защищены.</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/air-datepicker.js"></script>
+    <script src="https://unpkg.com/cookielib/src/cookie.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+
+		changeLocaleService.loadLocale("ru");
+
+	</script>
+	
+</body>
+</html>
